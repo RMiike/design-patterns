@@ -7,10 +7,41 @@ Cria-se um objeto cliente que possui diversas estratégias e um objeto contexto 
 
 # Exemplo prático
 
-Vamos examinar o exemplo Design Puzzle do livro Padrões de Projetos (Design Patterns).
-Primeiramente, vale ressaltar que criar diversas classes comportamentais não é uma boa prática, uma vez que o uso do polimorfismo na classe “behavior” será perdido.
-Para que isso não ocorra, busca-se programar para uma interface e não para uma implementação ou supertipo.
+Para simplificar, vamos examinar o exemplo Design Puzzle do livro Padrões de Projetos (Design Patterns).
 
-<a href="https://ibb.co/b6jjnxP"><img src="https://i.ibb.co/BfHHRmt/Puzzle.jpg" alt="Puzzle" border="0"></a>
+<img src="https://i.ibb.co/cyNJd4B/puzzle3.jpg" >
+
+Presume-se que todos os pesonagens podem executar a ação fight, logo a superclasse cuidará do código de implementação. O método display() é abstrato, já que todos os personagens são diferentes. 
+
+
+Cada subtipo de Character é responsável por implementar seu próprio comportamento display para o modo como aparece na tela.
+
+
+
+
+Vale ressaltar que criar diversas classes comportamentais não é uma boa prática, uma vez que o uso do polimorfismo na classe “behavior” será perdido.
+
+
+
+
+
+
+
+
+
+
+
+
+Para que isso não ocorra, busca-se programar para uma interface e não para uma implementação ou supertipo.
+encapsular
 
 Dessa forma, é necessário identificar os aspectos de sua aplicação e "separar o que muda do que fica igual".
+
+
+
+<img src="https://www.oreilly.com/library/view/head-first-design/0596007124/figs/web/025fig01.png.jpg">
+
+<img src="https://i.ibb.co/BfHHRmt/Puzzle.jpg" >
+
+<img src="https://i.ibb.co/60DTRVg/puzzle2.jpg" >
+
