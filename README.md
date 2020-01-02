@@ -1,7 +1,9 @@
 # Design_Patterns in C#
-Design Pattersn é uma ferramenta importante utilizada pelos desenvolvedores de softwares orientados a objeto, em que a solução e a reutilização das arquiteturas tornam o projeto mais bem sucedido, sendo um procedimento fácil e flexivel.
+Trata-se de uma ferramenta de suma importância utilizada por desenvolvedores de softwares orientados a objeto, cuja solução e reutilização da arquitetura tornam o projeto sucedido, de forma fácil e flexivel.
+De forma genérica, traz soluções para problemas cotidianos durante o desenvolvimento de um software, soluções essas que foram obtidas durante um arduo processo, com tentativas, erros e acertos.
 
-Aqui eu irei apresentar algumas implementações.
+
+Aqui eu irei abordar algumas implementações com exemplos práticos do conceito de Design Patterns.
 
 
 # References
