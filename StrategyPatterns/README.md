@@ -25,27 +25,11 @@ Dessa forma, a solução mais viável é "pegar o que variar e encapsular para n
 
 <img src="https://i.ibb.co/60DTRVg/puzzle2.jpg" >
 
-A partir de agora, os comportamentos ficam em uma classe separada que implementa uma interface de comportamento. Assim as classes não precisam dos detalhes de implementaçao para seu comportamento.
+A partir de agora, os comportamentos ficam em uma classe separada que implementa uma interface de comportamento. Assim as classes não precisam dos detalhes de implementaçao para seu comportamento. Tornando-se mais flexiveis. 
+Na classe Character é que será criada a propriedade do tipo weaponBehavior.
+Assim, será possível ensinar os personagens como usar as armas em defesa ou ataque
 
 <img src="https://i.ibb.co/BfHHRmt/Puzzle.jpg" >
-
-
-
-
-
-
-
-
-
-
-
-Para que isso não ocorra, busca-se programar para uma interface e não para uma implementação ou supertipo.
-
-
-
-
-
-<img src="https://www.oreilly.com/library/view/head-first-design/0596007124/figs/web/025fig01.png.jpg">
 
 
 
