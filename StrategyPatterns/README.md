@@ -23,12 +23,11 @@ Seria ncessário utilizar um método que cause o menor impacto no código exiten
 
 Dessa forma, a solução mais viável é "pegar o que variar e encapsular para não afetar o resto do código", fazendo-se necessário identificar os aspectos de sua aplicação e "separar o que muda do que fica igual".
 
+<img src="https://i.ibb.co/60DTRVg/puzzle2.jpg" >
 
+A partir de agora, os comportamentos ficam em uma classe separada que implementa uma interface de comportamento. Assim as classes não precisam dos detalhes de implementaçao para seu comportamento.
 
 <img src="https://i.ibb.co/BfHHRmt/Puzzle.jpg" >
-
-Vale ressaltar que criar diversas classes comportamentais não é uma boa prática, uma vez que o uso do polimorfismo na classe “behavior” será perdido.
-
 
 
 
@@ -41,7 +40,6 @@ Vale ressaltar que criar diversas classes comportamentais não é uma boa práti
 
 
 Para que isso não ocorra, busca-se programar para uma interface e não para uma implementação ou supertipo.
-encapsular
 
 
 
@@ -51,5 +49,5 @@ encapsular
 
 
 
-<img src="https://i.ibb.co/60DTRVg/puzzle2.jpg" >
+
 
