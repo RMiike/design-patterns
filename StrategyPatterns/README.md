@@ -25,6 +25,8 @@ Dessa forma, a solução mais viável é "pegar o que variar e encapsular para n
 
 
 
+<img src="https://i.ibb.co/BfHHRmt/Puzzle.jpg" >
+
 Vale ressaltar que criar diversas classes comportamentais não é uma boa prática, uma vez que o uso do polimorfismo na classe “behavior” será perdido.
 
 
@@ -47,7 +49,7 @@ encapsular
 
 <img src="https://www.oreilly.com/library/view/head-first-design/0596007124/figs/web/025fig01.png.jpg">
 
-<img src="https://i.ibb.co/BfHHRmt/Puzzle.jpg" >
+
 
 <img src="https://i.ibb.co/60DTRVg/puzzle2.jpg" >
 
