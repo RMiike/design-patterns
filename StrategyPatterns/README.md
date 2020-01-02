@@ -16,6 +16,12 @@ Presume-se que todos os pesonagens podem executar a ação fight, logo a supercl
 
 Cada subtipo de Character é responsável por implementar seu próprio comportamento display para o modo como aparece na tela.
 
+Caso seja necessário implementar uma ação de ataque e defesa, seria necessário modificar o método fight(), uma vez que cada arma ou personagem iria agir de uma forma diferente, uma vez que seria estranho apresentar uma defesa com um personagem de arco e flecha.
+
+Para tal situação, utilizar herança não é a resposta correta, uma vez que seria necessário realizar alteração nos diversos personagens.
+Seria ncessário utilizar um método que cause o menor impacto no código exitente. Perder menos tempo. Buscar desenvolver para crescer com o tempo e nao morrer.
+
+Dessa forma, a solução mais viável é "pegar o que variar e encapsular para não afetar o resto do código", fazendo-se necessário identificar os aspectos de sua aplicação e "separar o que muda do que fica igual".
 
 
 
@@ -35,7 +41,7 @@ Vale ressaltar que criar diversas classes comportamentais não é uma boa práti
 Para que isso não ocorra, busca-se programar para uma interface e não para uma implementação ou supertipo.
 encapsular
 
-Dessa forma, é necessário identificar os aspectos de sua aplicação e "separar o que muda do que fica igual".
+
 
 
 
