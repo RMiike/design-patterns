@@ -8,5 +8,7 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 
 # References
 [abishekaditya - DesignPatterns] (https://github.com/abishekaditya/DesignPatterns)
+
 [Software Design Patterns - Geeks for Geeks] (https://www.geeksforgeeks.org/software-design-patterns/)
+
 [Head First Design Patterns: A Brain-Friendly Guide] (Eric Freeman & Elisabeth Freeman with Kathy Siera & Bert Bates)
