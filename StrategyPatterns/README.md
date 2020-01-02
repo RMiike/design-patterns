@@ -1,4 +1,4 @@
-#Strategy_Patterns
+# Strategy_Patterns
 
 Nesse padrão de projeto a classe comportamento pode ser mudada no momento de sua execução.
 Cria-se um objeto que possui diversas estratégias e um objeto contexto com comportamento variável, 
