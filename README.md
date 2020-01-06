@@ -9,12 +9,32 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 # Implementation
 
 ## Creational
-T.B.D.
+– Builder;
+– Factory;
+– Object Pool;
+– Prototype;
+– Singleton;
 
 ## Structural
-T.B.D.
+– Adapter;
+– Bridge;
+– Composite;
+– Decorator;
+– Facade;
+– Flyweight;
+– Proxy;
+
 ## Behavioral
+– Chain of Responsibility;
+– Command;
+– Interpreter;
+– Iterator
+– Mediator;
+– Memento;
+– Observer;
 * [Strategy](/StrategyPatterns)
+– Template Method;
+– Visitor;
 
 # References
 * [abishekaditya - DesignPatterns](https://github.com/abishekaditya/DesignPatterns)
