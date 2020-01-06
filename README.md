@@ -9,32 +9,32 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 # Implementation
 
 ## Creational
-– Builder;
-– Factory;
-– Object Pool;
-– Prototype;
-– Singleton;
+* Builder
+* Factory
+* Object Pool
+* Prototype
+* Singleton
 
 ## Structural
-– Adapter;
-– Bridge;
-– Composite;
-– Decorator;
-– Facade;
-– Flyweight;
-– Proxy;
+* Adapter
+* Bridge
+* Composite
+* Decorator
+* Facade
+* Flyweight
+* Proxy
 
 ## Behavioral
-– Chain of Responsibility;
-– Command;
-– Interpreter;
-– Iterator
-– Mediator;
-– Memento;
-– Observer;
+* Chain of Responsibility
+* Command
+* Interpreter
+* Iterator
+* Mediator
+* Memento
+* Observer
 * [Strategy](/StrategyPatterns)
-– Template Method;
-– Visitor;
+* Template Method;
+* Visitor
 
 # References
 * [abishekaditya - DesignPatterns](https://github.com/abishekaditya/DesignPatterns)
