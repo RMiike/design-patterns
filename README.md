@@ -6,9 +6,18 @@ De forma genérica, traz soluções para problemas cotidianos durante o desenvol
 Aqui eu irei abordar algumas implementações com exemplos práticos do conceito de Design Patterns.
 
 
+# Implementation
+
+## Creational
+* [Strategy](/StrategyPatterns)
+## Structural
+T.B.D.
+## Behavioral
+T.B.D.
+
 # References
-[abishekaditya - DesignPatterns] (https://github.com/abishekaditya/DesignPatterns)
+* [abishekaditya - DesignPatterns](https://github.com/abishekaditya/DesignPatterns)
 
-[Software Design Patterns - Geeks for Geeks] (https://www.geeksforgeeks.org/software-design-patterns/)
+* [Software Design Patterns - Geeks for Geeks](https://www.geeksforgeeks.org/software-design-patterns/)
 
-[Head First Design Patterns: A Brain-Friendly Guide] (Eric Freeman & Elisabeth Freeman with Kathy Siera & Bert Bates)
+* [Head First Design Patterns: A Brain-Friendly Guide](Eric Freeman & Elisabeth Freeman with Kathy Siera & Bert Bates)
