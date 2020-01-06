@@ -14,6 +14,9 @@ namespace StrategyPatternTwo
             Character king = new King();
             king.setWeapon(new AxeBehavior());
             king.figh();
+            Character king2 = new King();
+            king.setWeapon(new SwordBehavior());
+            king2.figh();
             Character knight = new Knight();
             knight.setWeapon(new SwordBehavior());
             knight.figh();
