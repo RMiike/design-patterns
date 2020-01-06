@@ -41,12 +41,16 @@ Perceba que a classse Character recebe em seu construtor qual sera o comportamen
 
 <img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(3).JPG" >
 
-
-
 Por fim, verifica-se que o Character simplesmente alterna entre os comportamentos de armas estabelecidos, sem adicionar nenhuma outra funcionalidade.
-
 
 <img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(6).JPG" >
 
 
 
+# References
+* [abishekaditya - DesignPatterns](https://github.com/abishekaditya/DesignPatterns)
+
+* [Software Design Patterns - Geeks for Geeks](https://www.geeksforgeeks.org/software-design-patterns/)
+
+* [Head First Design Patterns: A Brain-Friendly Guide](Eric Freeman & Elisabeth Freeman with Kathy Siera & Bert Bates)
+* [15 Design Patterns para Você Impulsionar seu Código C# no Mundo Real](https://www.fabiosilvalima.net/design-patterns-no-mundo-real/)
