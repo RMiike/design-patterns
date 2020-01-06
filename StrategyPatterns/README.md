@@ -31,9 +31,10 @@ Assim, será possível ensinar os personagens como usar as armas em defesa ou at
 
 <img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(1).jpg" >
 
+As classes de ordenação implementam a interface IWeaponBehavior.
 
 <img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(4).JPG" >
-As classes de ordenação implementam a interface IWeaponBehavior.
+
 <img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(5).JPG" >
 
 Perceba que a classse Character recebe em seu construtor qual sera o comportamento de ordenação que será aplicado, e ainda delega a responsabilidade de ordenação a essa interface.
