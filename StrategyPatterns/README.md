@@ -9,7 +9,7 @@ Cria-se um objeto cliente que possui diversas estratégias e um objeto contexto 
 
 Para simplificar, vamos examinar o exemplo Design Puzzle do livro Padrões de Projetos (Design Patterns).
 
-<img src="https://i.ibb.co/cyNJd4B/puzzle3.jpg" >
+<img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic.jpg" >
 
 Presume-se que todos os pesonagens podem executar a ação fight, logo a superclasse cuidará do código de implementação. O método display() é abstrato, já que todos os personagens são diferentes. 
 
@@ -23,13 +23,13 @@ Seria ncessário utilizar um método que cause o menor impacto no código exiten
 
 Dessa forma, a solução mais viável é "pegar o que variar e encapsular para não afetar o resto do código", fazendo-se necessário identificar os aspectos de sua aplicação e "separar o que muda do que fica igual".
 
-<img src="https://i.ibb.co/60DTRVg/puzzle2.jpg" >
+<img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(2).jpg" >
 
 A partir de agora, os comportamentos ficam em uma classe separada que implementa uma interface de comportamento. Assim as classes não precisam dos detalhes de implementaçao para seu comportamento. Tornando-se mais flexiveis. 
 Na classe Character é que será criada a propriedade do tipo weaponBehavior.
 Assim, será possível ensinar os personagens como usar as armas em defesa ou ataque
 
-<img src="https://i.ibb.co/BfHHRmt/Puzzle.jpg" >
+<img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(1).jpg" >
 
 
 
