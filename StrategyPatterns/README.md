@@ -5,7 +5,7 @@ Cria-se um objeto cliente que possui diversas estratégias e um objeto contexto 
 
 
 
-# Exemplo prático
+# Implementation
 
 Para simplificar, vamos examinar o exemplo Design Puzzle do livro Padrões de Projetos (Design Patterns).
 
