@@ -32,6 +32,16 @@ Assim, será possível ensinar os personagens como usar as armas em defesa ou at
 <img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(1).jpg" >
 
 
+<img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(4).JPG" >
+<img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(5).JPG" >
+<img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(3).JPG" >
 
+A classse Character recebe em seu construtor qual sera o comportamento de ordenação que será aplicado.
 
+As classes de ordenação implementam a interface IWeaponBehavior.
+A classe Character delega a responsabilidade de ordenação a essa interface.
+
+<img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(6).JPG" >
+
+Verifica-se que o Character simplesmente alterna entre os comportamentos de armas estabelecidos, sem adicionar nenhuma outra funcionalidade.
 
