@@ -9,11 +9,12 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 # Implementation
 
 ## Creational
-* [Strategy](/StrategyPatterns)
+T.B.D.
+
 ## Structural
 T.B.D.
 ## Behavioral
-T.B.D.
+* [Strategy](/StrategyPatterns)
 
 # References
 * [abishekaditya - DesignPatterns](https://github.com/abishekaditya/DesignPatterns)
