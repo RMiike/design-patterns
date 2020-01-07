@@ -1,35 +1,53 @@
-﻿using ObserverPaternOne.Entities;
+﻿using ObserverPaternOne.Interfaces;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace ObserverPaternOne.Entities
 {
-    class WeatherData
+    class WeatherData : ISubject
     {
-        public ForecastDisplay _forecastDisplay;
-        public CurrentConditionsDisplay _currentConditionsDisplay;
-        public StatisticsDisplay _statisticsDisplay;
-        public float getTemperature()
+        private ArrayList observers;
+        private float temperature;
+        private float humidity;
+        private float pressure;
+       
+        public WeatherData()
         {
-            return 0;
+            observers = new ArrayList();
         }
-        public float getHumidity()
+        public void registerObserver(IObserver o)
         {
-            return 0;
-        }
-        public float getPressure()
-        {
-            return 0;
-        }
-        public void mensurementsChanged()
-        {
-            float temp = getTemperature();
-            float humidity = getHumidity();
-            float pressure = getPressure();
-
-            _currentConditionsDisplay.update(temp, humidity, pressure);
-            _statisticsDisplay.update(temp, humidity, pressure);
-            _forecastDisplay.update(temp, humidity, pressure);
+            observers.Add(o);
         }
 
-        
+        public void removeObserver(IObserver o)
+        {
+            int i = observers.IndexOf(o);
+            if (i >= 0)
+            {
+                observers.Remove(i);
+            }
+        }
+
+        public void notifyObserver()
+        {
+           foreach(IObserver observer in observers)
+            {
+                observer.update(temperature, humidity, pressure);
+            }
+
+        }
+
+        public void measurementsChanged()
+        {
+            notifyObserver();
+        }
+        public void setMesurements (float temperature, float humidity, float pressure)
+        {
+            this.temperature = temperature;
+            this.humidity = humidity;
+            this.pressure = pressure;
+            measurementsChanged();
+        }
     }
 }

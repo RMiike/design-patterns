@@ -1,27 +1,49 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using ObserverPaternOne.Interfaces;
 
-namespace ObserverPaternOne.Entities
+namespace ObserverPaternOne.Entities 
 {
-    class StatisticsDisplay
+    class StatisticsDisplay : IObserver, IDisplayElement
     {
-        public float temp { get; set; }
-        public float humidity { get; set; }
-        public float pressure { get; set; }
-        public void update(float temp, float humidity, float pressure)
+        private float temperature;
+        private float humidity;
+        private float pressure;
+        private ISubject _weatherData;
+        private float maxTemp = 0;
+        private float minTemp = 10000;
+        private float avTemp;
+        private float numRead = 0;
+
+        public StatisticsDisplay(ISubject weatherData)
         {
-            this.temp = temp;
-            this.humidity = humidity;
-            this.pressure = pressure;
+            this._weatherData = weatherData;
+            this._weatherData.registerObserver(this);
+        }
+        public void update(float temperature, float humidity, float presure)
+        {
+
+            avTemp += temperature;
+            numRead++;
+
+            this.temperature = temperature;
+            if (temperature > maxTemp)
+            {
+                maxTemp = temperature;
+            }
+            if(temperature < minTemp)
+            {
+                minTemp = temperature;
+            }
+            display();
         }
 
+     
         public void display()
         {
             Console.WriteLine("\n Statistics Display: \n"
-                              + "Temp: " + temp +
-                              "\nHumidity: " + humidity +
-                              "\nPressure: " + pressure);
+                              + "Average: " + avTemp/numRead +
+                              "\nMax: " + maxTemp +
+                              "\nMin: " + minTemp);
         }
 
     }

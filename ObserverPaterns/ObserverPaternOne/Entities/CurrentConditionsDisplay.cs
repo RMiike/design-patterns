@@ -1,28 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using ObserverPaternOne.Interfaces;
 
 namespace ObserverPaternOne.Entities
+
 {
-    class CurrentConditionsDisplay
+    class CurrentConditionsDisplay : IObserver, IDisplayElement
     {
-        public float temp { get; set; }
-        public float humidity { get; set; }
-        public float pressure { get; set; }
-        public void update(float temp, float humidity, float pressure)
+        private float temperature;
+        private float humidity;
+        private float pressure;
+        private ISubject weatherData;
+        public CurrentConditionsDisplay(ISubject weatherData)
         {
-            this.temp = temp;
+           this.weatherData = weatherData;
+            this.weatherData.registerObserver(this);
+
+        }
+        public void update(float temperature, float humidity, float pressure)
+        {
+            this.temperature = temperature;
             this.humidity = humidity;
             this.pressure = pressure;
+            display();
         }
 
         public void display()
         {
             Console.WriteLine("\n CurrentConditions Display: \n"
-                              + "Temp: " + temp +
-                              "\nHumidity: " + humidity +
+                              + "Temperature: " + temperature + " F degrees;" +
+                              "\nHumidity: " + humidity + " % ; " +
                               "\nPressure: " + pressure);
         }
+
+       
     }
 
 }
