@@ -31,7 +31,7 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 * Iterator
 * Mediator
 * Memento
-* Observer
+* [Observer](/ObserverPaterns)
 * [Strategy](/StrategyPatterns)
 * Template Method;
 * Visitor
