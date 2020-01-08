@@ -7,7 +7,8 @@ manter-se informado. Um  padrão que estabelece uma dependência de um-para-muit
 
 Suponhamos a criação de um app que capta informações de uma estação meteorológica e notifica os usuários de informações como 
 temperatura, umidade, pressão. 
-(/assets/Observer.001.JPG)
+
+<img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/ObserverPaterns/assets/Observer.001.JPG" >
 
 Imagine ainda que existam três visores que mostraram as condições meteorológicas atuais, estatísticas meteorológicas e uma possível 
 previsão. 
@@ -109,3 +110,5 @@ interface IObserver
 
 
 Para que isso funcione, a interface subject deve permanecer familiar, e todos os componentes meteorológicos implementam a interface observer, dando 
+
+<img src= "https://raw.githubusercontent.com/RMiike/design-patterns/master/ObserverPaterns/assets/Observer.002.JPG">
