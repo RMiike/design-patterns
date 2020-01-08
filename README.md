@@ -41,5 +41,6 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 
 * [Software Design Patterns - Geeks for Geeks](https://www.geeksforgeeks.org/software-design-patterns/)
 
-* [Head First Design Patterns: A Brain-Friendly Guide](Eric Freeman & Elisabeth Freeman with Kathy Siera & Bert Bates)
+* Head First Design Patterns: A Brain-Friendly Guide - Eric Freeman & Elisabeth Freeman with Kathy Siera & Bert Bates
+
 * [15 Design Patterns para Você Impulsionar seu Código C# no Mundo Real](https://www.fabiosilvalima.net/design-patterns-no-mundo-real/)
