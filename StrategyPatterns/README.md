@@ -33,17 +33,97 @@ Assim, será possível ensinar os personagens como usar as armas em defesa ou at
 
 As classes de ordenação implementam a interface IWeaponBehavior.
 
-<img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(4).JPG" >
+```
+interface IWeaponBehavior
+    {
+        void useWeapon();
+    }
+ ```
+```
+     class BowAndArrowBehavior : IWeaponBehavior
+    {
+        public void useWeapon()
+        {
+            System.Console.WriteLine("Shooting with an arrow!");
+        }
+    }
+      class KnifwBehavior : IWeaponBehavior
+    {
+        public void useWeapon()
+        {
+            System.Console.WriteLine("Cutting with a knife!");
+        }
+    }
+     class SwordBehavior : IWeaponBehavior
+    {
+        public void useWeapon()
+        {
+            System.Console.WriteLine("Swing a sword!");
+        }
+    }
+     class AxeBehavior : IWeaponBehavior
+    {
+       
+    public void useWeapon()
+        {
+            System.Console.WriteLine("Choping with an axe!");
+        }
+    }
+    
 
-<img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(5).JPG" >
+```
+
+
 
 Perceba que a classse Character recebe em seu construtor qual sera o comportamento de ordenação que será aplicado, e ainda delega a responsabilidade de ordenação a essa interface.
 
-<img src ="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(3).JPG" >
+```
+ abstract class Character
+    {
+
+        public IWeaponBehavior _weaponBehavior;
+
+        public Character()
+        {
+
+        }
+
+        public abstract void figh();
+
+        public void setWeapon(IWeaponBehavior weaponBehavior)
+        {
+            this._weaponBehavior = weaponBehavior;
+        }
+
+    }
+```
 
 Por fim, verifica-se que o Character simplesmente alterna entre os comportamentos de armas estabelecidos, sem adicionar nenhuma outra funcionalidade.
 
-<img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/StrategyPatterns/assets/StrategyPatternPic%20(6).JPG" >
+```
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Character queen = new Queen();
+            queen.setWeapon(new BowAndArrowBehavior()) ;
+            queen.figh();
+            Character king = new King();
+            king.setWeapon(new AxeBehavior());
+            king.figh();
+            Character king2 = new King();
+            king.setWeapon(new SwordBehavior());
+            king2.figh();
+            Character knight = new Knight();
+            knight.setWeapon(new SwordBehavior());
+            knight.figh();
+            Character troll = new Troll();
+            troll.setWeapon(new KnifwBehavior());
+            troll.figh();
+        }
+    }
+    
+```
 
 
 
