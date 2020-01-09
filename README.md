@@ -37,6 +37,9 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 * Visitor
 
 # References
+
+* [Christopher Okhravi - Design Patterns](https://www.youtube.com/channel/UCbF-4yQQAWw-UnuCd2Azfzg/videos)
+
 * [abishekaditya - DesignPatterns](https://github.com/abishekaditya/DesignPatterns)
 
 * [Software Design Patterns - Geeks for Geeks](https://www.geeksforgeeks.org/software-design-patterns/)
