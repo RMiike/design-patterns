@@ -19,7 +19,7 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 * Adapter
 * Bridge
 * Composite
-* Decorator
+* [Decorator](/DecoratorPattern)
 * Facade
 * Flyweight
 * Proxy
