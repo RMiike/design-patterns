@@ -242,15 +242,17 @@ Para exibir o funcionamento, primeiro cria-se o objeto WeatherData, criar a exib
 ```
 
 
+Por fim, a importância desse padrão se faz para que os observers não precisem ir até o subject para obter uma informação, uma vez que tal situação provocaria diversas chamadas de método para conseguir os estados desejados, além da necessidade de uma chamada constante. 
+Dessa forma, os subjects são responsáveis por enviar as notificações para todos os observers, sempre que houver uma mudança de estado.
+
+
 
 
 # References
-* [Christopher Okhravi - Design Patterns](https://www.youtube.com/channel/UCbF-4yQQAWw-UnuCd2Azfzg/videos)
 
-* [abishekaditya - DesignPatterns](https://github.com/abishekaditya/DesignPatterns)
+* [Christopher Okhravi - Design Patterns](https://www.youtube.com/channel/UCbF-4yQQAWw-UnuCd2Azfzg/videos)
 
 * [Software Design Patterns - Geeks for Geeks](https://www.geeksforgeeks.org/software-design-patterns/)
 
 * Head First Design Patterns: A Brain-Friendly Guide - Eric Freeman & Elisabeth Freeman with Kathy Siera & Bert Bates
 
-* [15 Design Patterns para Você Impulsionar seu Código C# no Mundo Real](https://www.fabiosilvalima.net/design-patterns-no-mundo-real/)
