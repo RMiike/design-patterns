@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DecoratorPattern.Entities.Decorators;
+using DecoratorPattern.Entities;
+using System.Globalization;
 
 namespace DecoratorPattern
 {
@@ -6,7 +8,22 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Beverage beverage = new Espresso();
+
+            System.Console.WriteLine(beverage.getDescritpion() + " $ " + beverage.cost());
+
+
+            Beverage beverage1 = new DarkRoast();
+            System.Console.WriteLine(beverage1.getDescritpion() + " $ " + beverage1.cost());
+            beverage1 = new Mocha(beverage1); 
+            System.Console.WriteLine(beverage1.getDescritpion() + " $ "  + beverage1.cost());
+
+             beverage1 = new Milk(beverage1);
+            beverage1 = new Whip(beverage1);;
+
+            System.Console.WriteLine(beverage1.getDescritpion()+" $ " +beverage1.cost().ToString(CultureInfo.InvariantCulture));
+            
         }
     }
 }
