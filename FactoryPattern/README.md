@@ -1,8 +1,6 @@
 # Factory_Pattern
 
-
-
-
+Trata-se de um padrão criacional  que “define uma interface para um objeto, mas permite às classes decidir qual classe instanciar”, combinando heranças, polimorfismos e interfaces para deixar a classe principal, Factory, decidir qual a melhor forma de instanciar uma subclasse.
 
 # Implementation
 
