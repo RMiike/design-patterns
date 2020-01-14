@@ -39,6 +39,117 @@ Dessa forma é possível, passar um objeto decorado no lugar do original.
 
 <img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/DecoratorPattern/assets/Decorator.003.JPG">
 
+Para implementar  o código, começamos com a classe abstrata principal Beverage, que é abstrata e possui os métodos virtual getDescription() e abstract cost(), já que não queremos dar uma implementação a cost(), uma vez que precisamos saber o tipo de Beverage que queremos.
+
+```
+abstract class Beverage
+    {
+
+
+        private string _description = "Unknown Beverage";
+  
+
+    
+        public  virtual string getDescription
+        {
+            get { return _description; } 
+        }
+
+        public abstract double cost();
+
+       
+    }
+```
+Agora temos o Abstract Decorator, classe abstrata também (Condiment Decorator), que serão intercambiáveis com Beverage, logo será estendido de Beverage.
+Exige-se também que todos os decoradores implementem o método getDescription.
+
+```
+  abstract class CondimentDecorator : Beverage
+    {
+        string _description = "Abstract Condiment Decorator";
+        public override string getDescription
+        {
+            get { return _description; }
+        }
+    }
+```
+Em seguida, implementa-se as bebidas principais, podendo citar como exemplo o DarkRoast, que estende Beverage e é um componente concreto, uma vez que se trata de uma bebida, logo não será necessário calcular os adicionais, apenas iremos retornar o preço, ou seja, $ 0.99.
+A descrição será feita ao herdar o método getDescription, que será substituída em uma classe derivada com a propriedade declarada  _description. 
+
+
+```
+class DarkRoast : Beverage
+    {
+
+        string _description = "Dark Roast Coffe";
+    
+        public override double cost()
+        {
+            return .99;
+        }
+
+        public override string getDescription
+        {
+            get { return _description; }
+        }
+
+    }
+```
+Por fim os decoradores concretos,  que iremos utilizar como exemplo Mocha.
+Por se tratar de um decorador, este ira estender o decorador abstrato, que estendeu Beverage.
+Para iniciar, iremos criar uma instância de Mocha com referência a Beverage, e uma variável de instância para conter a bebida que está sendo envelopada.
+Em seguida passamos o custo da bebida que foi pedida( com _beverage.cost()) delegando a chamada para o objeto que está sendo decorado, para que em seguida possa somar ao custo de Mocha.
+O mesmo é utilizado para o método getDesciption que irá acrescentar ao nome contido no objeto que está sendo decorado a palavra “, Mocha”.
+
+```
+class Mocha : CondimentDecorator
+            {
+        Beverage _beverage;
+        public Mocha(Beverage beverage)
+        {
+            _beverage = beverage;
+        }
+        public override double cost()
+        {
+            return _beverage.cost() + .20;
+        }
+        public override string getDescription
+        {
+            get
+            {
+                return _beverage.getDescription + ", Mocha";
+            }
+        }
+    }
+```
+Aqui se encontram alguns códigos de teste, em que eu peço um expresso em um decorador e imprime apenas a descrição e o preço e em seguida o pedido de Dark Roast com os decoradores em sequência e o respectivo acréscimo de valor.
+```
+static void Main(string[] args)
+        {
+
+            Beverage beverage = new Expresso();
+
+            System.Console.WriteLine(beverage.getDescription + " $ " + beverage.cost());
+
+
+            Beverage beverage1 = new DarkRoast();
+            System.Console.WriteLine(beverage1.getDescription + " $ " + beverage1.cost());
+            beverage1 = new Mocha(beverage1); 
+            System.Console.WriteLine(beverage1.getDescription  + " $ "  + beverage1.cost());
+
+             beverage1 = new Milk(beverage1);
+            System.Console.WriteLine(beverage1.getDescription  + " $ " + beverage1.cost());
+
+            beverage1 = new Soy(beverage1);
+
+            System.Console.WriteLine(beverage1.getDescription +" $ " +beverage1.cost());
+            beverage1 = new Whip(beverage1);
+
+            System.Console.WriteLine(beverage1.getDescription + " $ " + beverage1.cost());
+
+        }
+
+```
 
 
 # References
