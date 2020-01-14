@@ -151,6 +151,7 @@ static void Main(string[] args)
 
 ```
 
+<img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/DecoratorPattern/assets/Decorator.005.JPG">
 
 # References
 
