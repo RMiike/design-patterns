@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DecoratorPattern.Entities.Decorators
+﻿  namespace DecoratorPattern.Entities.Decorators
 {
     abstract class CondimentDecorator : Beverage
     {
-        public abstract  string getDescription();
-      
+        string _description = "Abstract Condiment Decorator";
+        public override string getDescription
+        {
+            get { return _description; }
+        }
     }
 }

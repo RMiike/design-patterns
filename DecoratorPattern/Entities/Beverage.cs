@@ -5,13 +5,13 @@ namespace DecoratorPattern.Entities
     {
 
 
-        public string description = "Unknown Beverage ";
+        private string _description = "Unknown Beverage";
   
 
     
-        public virtual string getDescritpion()
+        public  virtual string getDescription
         {
-            return description; 
+            get { return _description; } 
         }
 
         public abstract double cost();

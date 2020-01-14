@@ -1,17 +1,15 @@
 ﻿
-
 namespace DecoratorPattern.Entities
 {
-    class DarkRoast : Beverage
+    class Expresso : Beverage
     {
 
-        string _description = "Dark Roast Coffe";
-    
+        string _description = "Expresso";
+   
         public override double cost()
         {
-            return .99;
+            return 1.99;
         }
-
         public override string getDescription
         {
             get { return _description; }

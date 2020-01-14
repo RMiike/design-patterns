@@ -1,21 +1,15 @@
-﻿
-namespace DecoratorPattern.Entities
+﻿namespace DecoratorPattern.Entities
 {
     class Decaf : Beverage
     {
-        
-        public Decaf()
-        {
-            description = "Decaf";
-        }
+        string _description = "Decaf";
         public override double cost()
         {
             return 1.05;
         }
-
-        public override string getDescritpion()
+        public override string getDescription
         {
-            throw new System.NotImplementedException();
+            get { return _description; }
         }
     }
 }

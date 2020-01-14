@@ -2,18 +2,16 @@
 {
     class HouseBlend : Beverage
     {
-        public HouseBlend()
-        {
-            description = "House Blend";
-        }
+        string _description = "House Blend";
+       
         public override double cost()
         {
             return .89;
         }
-
-        public override string getDescritpion()
+        public override string getDescription
         {
-            throw new System.NotImplementedException();
+            get { return _description; }
         }
+
     }
 }

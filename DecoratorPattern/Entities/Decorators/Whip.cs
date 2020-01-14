@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace DecoratorPattern.Entities.Decorators
 {
     class Whip : CondimentDecorator
@@ -14,12 +11,15 @@ namespace DecoratorPattern.Entities.Decorators
         }
         public override double cost()
         {
-            return _beverage.cost() + 0.10;
+            return _beverage.cost() + .10;
         }
 
-        public override string getDescription()
+        public override string getDescription
         {
-            return _beverage.description + ", Whip";
+            get
+            {
+                return this._beverage.getDescription + ", Whip";
+            }
         }
 
     }
