@@ -39,6 +39,8 @@ Dessa forma é possível, passar um objeto decorado no lugar do original.
 
 <img src="https://raw.githubusercontent.com/RMiike/design-patterns/master/DecoratorPattern/assets/Decorator.003.JPG">
 
+
+
 # References
 
 * [Software Design Patterns - Geeks for Geeks](https://www.geeksforgeeks.org/software-design-patterns/)
