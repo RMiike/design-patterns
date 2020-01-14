@@ -10,7 +10,7 @@ Aqui eu irei abordar algumas implementações com exemplos práticos do conceito
 
 ## Creational
 * Builder
-* Factory
+* [Factory](/FactoryPattern)
 * Object Pool
 * Prototype
 * Singleton
